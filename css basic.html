@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body bgcolor="Whitesmoke">
+    <h1 style= color:burlywood>Cascading Style Sheet </h1>
+    <P>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. <br> CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript </P>
+    <h3 style="color: darkslategray">Cascading means in CSS </h3>    
+    <p>In CSS, "Cascading" refers to the way styles are determined and applied to HTML elements when multiple conflicting styles are defined. <br> The term "Cascading" is an important aspect of the CSS (Cascading Style Sheets) language, and it describes the order of priority that the browser uses to apply styles. <br>The CSS styles can come from different sources, and they have different levels of specificity and importance. These sources, in order of increasing priority, are: </p>
+    <ul>
+        <li><h5 style= color:olive>User Agent Stylesheet:</h5><p>This is the default styling applied by the browser itself. Every HTML element has some default styles provided by the browser.</p></li>
+        <li><h5 style = color:olive>External Stylesheets:</h5><p>These are external CSS files that you link to your HTML document. Styles defined here can be applied globally to your entire website.</p></li>
+        <li><h5 style = color:olive>Internal Stylesheets:</h5><p>These are styles defined within the "style" element in the HTML document "head" They affect the specific HTML document they are included in.</p></li>
+        <li><h5 style = color:olive>Inline Styles:</h5><p>These are styles defined directly on individual HTML elements using the style attribute. They have the highest specificity and will override external and internal styles.</p></li>
+        <li><h5 style = color:olive>Specificity and Importance:</h5><p> If multiple rules with the same selector target an element, CSS uses specificity to determine which rule should be applied. <br> Additionally, you can use the !important declaration to give a style rule the highest priority.</p></li>
+        <li><h5 style = color:olive>Order of Appearance:</h5><p> If two rules have the same specificity and importance, the one that appears later in the stylesheet or HTML document takes precedence.</p></li>
+    </ul>
+    <h2 style="color:darkslategray">Why we use CSS</h2>
+    <p>CSS (Cascading Style Sheets) is used in web development for several important reasons</p>
+    <ul>
+        <li><h5 style="color:sienna">Separation of Concerns:</h5><p>CSS allows you to separate the content (HTML) of a web page from its presentation (styling). <br> This separation makes it easier to manage and maintain web content. <br> Developers can focus on the structure and semantics of the HTML while designers work on the visual presentation using CSS.</p></li>
+        <li><h5 style="color:sienna">Consistency:</h5><p> CSS enables you to create a consistent look and feel across a website or web application. <br> By defining styles centrally, you can ensure that headings, paragraphs, buttons, and other elements have a uniform appearance throughout the site.</p></li>
+        <li><h5 style="color:sienna">Flexibility:</h5><p> With CSS, you have fine-grained control over the layout and styling of web elements. <br> You can change the appearance of an entire site by modifying a single CSS file, making it highly adaptable to design changes or user preferences.</p></li>
+        <li><h5 style="color:sienna">Accessibility:</h5><p>CSS allows you to improve the accessibility of your web content. You can use CSS to control the order in which content is presented (e.g., using flexbox or grid layout) <br> It make text more readable, and ensure that web pages are responsive to different devices and screen sizes.</p></li>
+        <li><h5 style="color:sienna">Load Time and Bandwidth: </h5><p>Separating styles from content reduces the size of HTML files, making web pages load faster. <br> This can improve the user experience, especially on slower internet connections and mobile devices.</p></li>
+        <li><h5 style="color:sienna">Maintenance:</h5><p>When you want to make global design changes, such as adjusting colors or fonts, you can do so by editing a single CSS file. <br> This is much more efficient than manually updating the style of each HTML element individually</p></li>
+        <li><h5 style="color:sienna">Cross-Browser Compatibility:</h5><p>CSS helps ensure that your website looks consistent and works correctly across different web browsers. <br>Browsers may have their own default styles, and CSS allows you to override these defaults and achieve a consistent appearance.</p></li>
+        <li><h5 style="color:sienna">Animations and Interactivity: </h5><p>CSS includes support for animations and transitions, allowing you to create interactive and visually engaging user interfaces without relying on JavaScript.</p></li>
+        <li><h5 style="color:sienna">Print Styling:</h5><p>CSS can be used to create print stylesheets, which define how a web page should appear when printed. <br> This enables you to optimize the printed output of web content.</p></li>
+        <li><h5 style="color:sienna">Third-Party Integration:</h5><p>When using CSS frameworks or libraries (e.g., Bootstrap, Materialize) <br> you can leverage pre-designed styles and components to expedite web development and achieve a consistent design language.</p></li>
+        </ul>
+        <h2 style="color:darkslategray">Stylesheet in CSS</h2>
+        <p>Stylesheets allow web developers and designers to control the layout and appearance of web content, making it visually appealing, consistent, and user-friendly. <br> They help maintain a clear separation between content (HTML) and presentation (CSS), facilitating easier maintenance and updates of web pages. <br> CSS (Cascading Style Sheets), style sheets are documents or files that contain a set of rules and instructions used to define the visual presentation and formatting of HTML (or XML) documents. <br> These rules specify how HTML elements should be displayed on a web page, including aspects such as layout, colors, fonts, spacing, and other stylistic properties.</p>
+        <H3 style="color: darkslategray">Ways of adding CSS to HTML</H3>
+        <p>Three are three main ways of adding CSS to HTML</p>
+        <ul>
+            <li><h5 style="color:peru">Inline Style:</h5><p> Inline styles are applied directly to individual HTML elements using the style attribute. <br> These styles have the highest specificity and apply only to the element they are associated with.</p></li>
+            <li><h5 style="color:peru">Internal Style:</h5><p> An internal stylesheet, also known as an embedded stylesheet, is defined within the <b>"style"</b> element in the <b>"head"</b> section of an HTML document. <br> Styles defined here apply only to that specific HTML document. This is useful when you need styles unique to a single page.</p></li>
+            <li><h5 style="color:peru">External Style:</h5><p> An external stylesheet is a separate CSS file with a .css extension that is linked to an HTML document using the <b>"link"</b> element within the HTML document's <b>"head"</b> section. <br> This allows you to define styles in one central location and apply those styles to multiple HTML documents. <br> External stylesheets are widely used for maintaining a consistent design across a website.</p></li>
+        </ul>
+        <h3 style="color:darkslategray">Limitations of HTML in Styling Before CSS:</h3>
+         <p>Before the introduction of CSS, HTML was primarily responsible for both content and presentation. This had several limitations.</p>
+         <ul>
+            <li><h5 style="color:darkgoldenrod">Limited Styling Options:</h5><p>HTML's styling capabilities were very limited. You could change basic attributes like text color, font size, and background color <br> But complex layout and design were challenging to achieve.</p></li>
+            <li><h5 style="color:darkgoldenrod">Inconsistent Design: </h5><p> Without a standardized way to apply styles, websites often had inconsistent designs. <br>Styling had to be repeated for each HTML element, leading to code redundancy.</p></li>
+            <li><h5 style="color:darkgoldenrod">Maintenance Challenges:</h5><p>Any design changes required manual updates to every HTML page. <br> This was time-consuming and error-prone, especially for larger websites.</p></li>
+            <li><h5 style="color:darkgoldenrod">Lack of Responsiveness:</h5><p> HTML alone couldn't provide responsive design. <br> Websites looked the same regardless of the user's screen size, making them less user-friendly on different devices.</p></li>
+            <li><h5 style="color:darkgoldenrod">Accessibility Issues: </h5><p> HTML couldn't address accessibility concerns effectively. <br> Ensuring a good experience for users with disabilities was difficult without proper styling control.</p></li>
+            <li><h5 style="color:darkgoldenrod">Print Styling Difficulties:</h5><p>Creating print-friendly versions of web pages was challenging, often resulting in poor-quality printed output.</p></li>
+         </ul>
+</body>
+</html>
